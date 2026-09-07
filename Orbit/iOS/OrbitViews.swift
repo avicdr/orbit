@@ -37,6 +37,8 @@ struct IOSOrbitOverviewView: View {
             }
             .sheet(isPresented: $isPresentingCreate) {
                 IOSOrbitEditorView()
+                    .presentationDetents([.large])
+                    .presentationDragIndicator(.visible)
             }
         }
     }
@@ -207,45 +209,73 @@ private struct IOSOrbitEditorView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Orbit") {
-                    TextField("Name", text: $name, prompt: Text("e.g. Learning"))
-                    TextField("Description", text: $description, axis: .vertical)
-                        .lineLimit(2...4)
-                }
-                Section("Appearance") {
-                    Picker("Icon", selection: $icon) {
-                        Label("Orbit", systemImage: "circle.grid.2x2").tag("circle.grid.2x2")
-                        Label("Career", systemImage: "briefcase.fill").tag("briefcase.fill")
-                        Label("Health", systemImage: "heart.fill").tag("heart.fill")
-                        Label("Creative", systemImage: "paintbrush.fill").tag("paintbrush.fill")
-                    }
-                    Picker("Color", selection: $colorToken) {
-                        ForEach(OrbitColor.tokens, id: \.self) { token in
-                            Text(token.capitalized).tag(token)
-                        }
-                    }
-                }
-                Section("Attention") {
-                    Slider(value: $weight, in: 0.5...2, step: 0.25) {
-                        Text("Weight")
-                    } minimumValueLabel: { Text("0.5") } maximumValueLabel: { Text("2") }
-                    Text("\(weight, format: .number.precision(.fractionLength(2)))× relative weight")
-                        .foregroundStyle(.secondary)
-                }
+                orbitDetailsSection
+                appearanceSection
+                attentionSection
             }
-            .navigationTitle(orbit == nil ? "New Orbit" : "Edit Orbit")
+            .scrollContentBackground(.hidden)
+            .background(Color(uiColor: .systemGroupedBackground))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+                ToolbarItem(placement: .principal) {
+                    Text(orbit == nil ? "New Orbit" : "Edit Orbit")
+                        .font(.headline)
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { save() }
-                        .disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                        .disabled(isNameEmpty)
                 }
             }
             .alert("Couldn’t save Orbit", isPresented: Binding(
                 get: { errorMessage != nil }, set: { if !$0 { errorMessage = nil } }
             )) { Button("OK", role: .cancel) {} } message: { Text(errorMessage ?? "") }
         }
+    }
+
+    private var orbitDetailsSection: some View {
+        Section("Orbit") {
+            TextField("Name", text: $name, prompt: Text("e.g. Learning"))
+                .textFieldStyle(.plain)
+                .textInputAutocapitalization(.words)
+                .accessibilityLabel("Orbit name")
+            TextField("Description", text: $description, axis: .vertical)
+                .textFieldStyle(.plain)
+                .lineLimit(3...5)
+                .accessibilityLabel("Orbit description")
+        }
+    }
+
+    private var appearanceSection: some View {
+        Section("Appearance") {
+            Picker("Icon", selection: $icon) {
+                Label("Orbit", systemImage: "circle.grid.2x2").tag("circle.grid.2x2")
+                Label("Career", systemImage: "briefcase.fill").tag("briefcase.fill")
+                Label("Health", systemImage: "heart.fill").tag("heart.fill")
+                Label("Creative", systemImage: "paintbrush.fill").tag("paintbrush.fill")
+            }
+            Picker("Color", selection: $colorToken) {
+                ForEach(OrbitColor.tokens, id: \.self) { token in
+                    Text(token.capitalized).tag(token)
+                }
+            }
+        }
+    }
+
+    private var attentionSection: some View {
+        Section("Attention") {
+            Slider(value: $weight, in: 0.5...2, step: 0.25) {
+                Text("Weight")
+            } minimumValueLabel: { Text("0.5") } maximumValueLabel: { Text("2") }
+            Text("\(weight, format: .number.precision(.fractionLength(2)))× relative weight")
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    private var isNameEmpty: Bool {
+        name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
     private func save() {

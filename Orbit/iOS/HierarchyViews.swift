@@ -1,7 +1,7 @@
 import SwiftUI
 import SwiftData
 
-private struct IOSGoalDetailView: View {
+struct IOSGoalDetailView: View {
     @Environment(\.modelContext) private var context
     let goal: Goal
     @State private var showProjectEditor = false
@@ -128,12 +128,55 @@ struct IOSTaskDetailView: View {
     private func transition() { do { let repository = OrbitRepository(context: context); if task.status == .completed { try repository.reopen(task) } else { try repository.complete(task) } } catch { errorMessage = error.localizedDescription } }
 }
 
-private struct IOSGoalEditorView: View {
+struct IOSGoalEditorView: View {
     @Environment(\.dismiss) private var dismiss; @Environment(\.modelContext) private var context
     let goal: Goal?; let orbit: Orbit?
     @State private var title: String; @State private var notes: String; @State private var priority: TaskPriority; @State private var hasDate: Bool; @State private var date: Date
     init(goal: Goal? = nil, orbit: Orbit?) { self.goal = goal; self.orbit = orbit; _title = State(initialValue: goal?.title ?? ""); _notes = State(initialValue: goal?.notes ?? ""); _priority = State(initialValue: goal?.priority ?? .normal); _hasDate = State(initialValue: goal?.targetDate != nil); _date = State(initialValue: goal?.targetDate ?? .now) }
-    var body: some View { NavigationStack { Form { TextField("Outcome", text: $title); TextField("Notes", text: $notes, axis: .vertical).lineLimit(2...4); Picker("Priority", selection: $priority) { ForEach(TaskPriority.allCases, id: \.self) { Text($0.label).tag($0) } }; Toggle("Target date", isOn: $hasDate); if hasDate { DatePicker("Target", selection: $date, displayedComponents: .date) } }.navigationTitle(goal == nil ? "New Goal" : "Edit Goal").toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }; ToolbarItem(placement: .confirmationAction) { Button("Save") { save() }.disabled(title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty) } } } }
+    var body: some View {
+        NavigationStack {
+            Form {
+                goalDetails
+                targetDateSection
+            }
+            .navigationTitle(goal == nil ? "New Goal" : "Edit Goal")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save") { save() }
+                        .disabled(isTitleEmpty)
+                }
+            }
+        }
+    }
+
+    private var goalDetails: some View {
+        Group {
+            TextField("Outcome", text: $title)
+            TextField("Notes", text: $notes, axis: .vertical)
+                .lineLimit(2...4)
+            Picker("Priority", selection: $priority) {
+                ForEach(TaskPriority.allCases, id: \.self) { priority in
+                    Text(priority.label).tag(priority)
+                }
+            }
+        }
+    }
+
+    private var targetDateSection: some View {
+        Group {
+            Toggle("Target date", isOn: $hasDate)
+            if hasDate {
+                DatePicker("Target", selection: $date, displayedComponents: .date)
+            }
+        }
+    }
+
+    private var isTitleEmpty: Bool {
+        title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
     private func save() { do { let repo = OrbitRepository(context: context); if let goal { try repo.update(goal, title: title, notes: notes, priority: priority, targetDate: hasDate ? date : nil, status: goal.status) } else { _ = try repo.createGoal(title: title, orbit: orbit, notes: notes, priority: priority, targetDate: hasDate ? date : nil) }; dismiss() } catch {} }
 }
 

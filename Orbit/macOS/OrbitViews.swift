@@ -186,11 +186,40 @@ private struct MacGoalOutline: View {
                 VStack(alignment: .leading, spacing: 7) {
                     HStack { Image(systemName: "square.stack.3d.up").foregroundStyle(.secondary); Text(project.title).font(.subheadline.weight(.medium)); Spacer(); Button("Edit") { editProject(project) }; Button("Add Task") { addTask(project) } }
                     ForEach(project.tasks.sorted { $0.createdAt < $1.createdAt }) { task in
-                        Button { editTask(task) } label: { HStack { Image(systemName: task.status == .completed ? "checkmark.circle.fill" : "circle").foregroundStyle(task.status == .completed ? .green : .secondary); Text(task.title).strikethrough(task.status == .completed); Spacer(); Text(task.priority.label).font(.caption).foregroundStyle(.secondary) } }.buttonStyle(.plain)
+                        MacTaskRow(task: task, editTask: { editTask(task) })
                     }
                 }.padding(.leading, 24)
             }
         }.padding(16).background(.quaternary, in: .rect(cornerRadius: 12))
+    }
+}
+
+private struct MacTaskRow: View {
+    let task: OrbitTask
+    let editTask: () -> Void
+
+    var body: some View {
+        Button(action: editTask) {
+            HStack {
+                Image(systemName: task.status == .completed ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(task.status == .completed ? Color.green : Color.secondary)
+                Text(task.title).strikethrough(task.status == .completed)
+                Spacer()
+                Text(taskPriorityLabel)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    private var taskPriorityLabel: String {
+        switch task.priority {
+        case .low: "Low"
+        case .normal: "Normal"
+        case .high: "High"
+        case .critical: "Critical"
+        }
     }
 }
 

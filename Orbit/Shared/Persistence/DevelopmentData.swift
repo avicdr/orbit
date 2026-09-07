@@ -24,5 +24,46 @@ public enum OrbitDevelopmentData {
             estimatedDuration: 30 * 60,
             energyRequirement: .good
         )
+
+        let health = try repository.createOrbit(
+            name: "Health",
+            icon: "heart.fill",
+            colorToken: "green",
+            description: "Energy for the life I want to live",
+            weight: 1.25
+        )
+        let healthGoal = try repository.createGoal(
+            title: "Build a sustainable routine",
+            orbit: health,
+            notes: "Small practices that make good days easier.",
+            priority: .normal
+        )
+        let movement = try repository.createProject(
+            title: "Morning movement",
+            goal: healthGoal,
+            priority: .normal,
+            deadline: Calendar.current.date(byAdding: .day, value: 21, to: .now)
+        )
+        _ = try repository.createTask(
+            title: "Plan three short sessions",
+            project: movement,
+            status: .completed,
+            priority: .normal,
+            estimatedDuration: 20 * 60,
+            energyRequirement: .okay
+        )
+
+        let learning = try repository.createOrbit(
+            name: "Learning",
+            icon: "book.closed.fill",
+            colorToken: "purple",
+            description: "Keep curiosity in motion"
+        )
+        _ = try repository.createGoal(
+            title: "Grow the product craft",
+            orbit: learning,
+            notes: "Make time for deliberate practice.",
+            priority: .high
+        )
     }
 }

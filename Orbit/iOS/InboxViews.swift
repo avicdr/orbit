@@ -2,6 +2,8 @@ import SwiftUI
 import SwiftData
 
 struct IOSAppRootView: View {
+    @Environment(\.modelContext) private var context
+
     var body: some View {
         TabView {
             IOSNowView()
@@ -13,6 +15,11 @@ struct IOSAppRootView: View {
             IOSTimeView()
                 .tabItem { Label("Time", systemImage: "clock") }
         }
+        #if targetEnvironment(simulator)
+        .task {
+            try? OrbitDevelopmentData.seedIfNeeded(into: context)
+        }
+        #endif
     }
 }
 

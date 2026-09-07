@@ -168,7 +168,7 @@ struct MacTimelineView: View {
     private func timelineEntry(_ entry: TimelineEntry) -> some View {
         HStack(spacing: 8) {
             Image(systemName: entry.kind == .task ? "checkmark.circle" : "calendar")
-                .foregroundStyle(entry.kind == .task ? .tint : .secondary)
+                .foregroundStyle(entry.kind == .task ? Color.accentColor : Color.secondary)
             VStack(alignment: .leading, spacing: 2) {
                 Text(entry.title).font(.subheadline.weight(.medium))
                 Text("\(entry.interval.start.formatted(date: .omitted, time: .shortened)) – \(entry.interval.end.formatted(date: .omitted, time: .shortened))")

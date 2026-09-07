@@ -12,7 +12,7 @@ private extension TaskPriority {
     }
 }
 
-private struct MacGoalEditor: View {
+struct MacGoalEditor: View {
     @Environment(\.dismiss) private var dismiss; @Environment(\.modelContext) private var context
     let goal: Goal?; let orbit: Orbit
     @State private var title: String; @State private var notes: String; @State private var priority: TaskPriority
@@ -21,7 +21,7 @@ private struct MacGoalEditor: View {
     private func hierarchySheet<Content: View>(title: String, @ViewBuilder content: () -> Content, save: @escaping () -> Void) -> some View { VStack(alignment: .leading) { Text(title).font(.title2); content(); HStack { Spacer(); Button("Cancel") { dismiss() }; Button("Save", action: save).keyboardShortcut(.defaultAction).disabled(title.isEmpty) } }.padding(24).frame(width: 420) }
 }
 
-private struct MacProjectEditor: View {
+struct MacProjectEditor: View {
     @Environment(\.dismiss) private var dismiss; @Environment(\.modelContext) private var context
     let project: Project?; let goal: Goal?; let orbit: Orbit
     @State private var title: String; @State private var notes: String; @State private var priority: TaskPriority
