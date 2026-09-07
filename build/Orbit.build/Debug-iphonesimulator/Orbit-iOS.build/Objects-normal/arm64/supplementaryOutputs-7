@@ -1,0 +1,23 @@
+{
+  "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DailyState.swift" : {
+    "const-values" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/DailyState.swiftconstvalues",
+    "dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/DailyState.d",
+    "diagnostics" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/DailyState.dia",
+    "object" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/DailyState.o",
+    "swift-dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/DailyState.swiftdeps"
+  },
+  "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/FocusSession.swift" : {
+    "const-values" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/FocusSession.swiftconstvalues",
+    "dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/FocusSession.d",
+    "diagnostics" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/FocusSession.dia",
+    "object" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/FocusSession.o",
+    "swift-dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/FocusSession.swiftdeps"
+  },
+  "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskContext.swift" : {
+    "const-values" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/TaskContext.swiftconstvalues",
+    "dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/TaskContext.d",
+    "diagnostics" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/TaskContext.dia",
+    "object" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/TaskContext.o",
+    "swift-dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/arm64/TaskContext.swiftdeps"
+  }
+}

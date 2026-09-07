@@ -1,0 +1,23 @@
+{
+  "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/CalendarAvailability.swift" : {
+    "const-values" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/CalendarAvailability.swiftconstvalues",
+    "dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/CalendarAvailability.d",
+    "diagnostics" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/CalendarAvailability.dia",
+    "object" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/CalendarAvailability.o",
+    "swift-dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/CalendarAvailability.swiftdeps"
+  },
+  "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitModelContainer.swift" : {
+    "const-values" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/OrbitModelContainer.swiftconstvalues",
+    "dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/OrbitModelContainer.d",
+    "diagnostics" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/OrbitModelContainer.dia",
+    "object" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/OrbitModelContainer.o",
+    "swift-dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/OrbitModelContainer.swiftdeps"
+  },
+  "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/Clock.swift" : {
+    "const-values" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/Clock.swiftconstvalues",
+    "dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/Clock.d",
+    "diagnostics" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/Clock.dia",
+    "object" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/Clock.o",
+    "swift-dependencies" : "/Users/anoushka/Documents/orbit/build/Orbit.build/Debug-iphonesimulator/Orbit-iOS.build/Objects-normal/x86_64/Clock.swiftdeps"
+  }
+}

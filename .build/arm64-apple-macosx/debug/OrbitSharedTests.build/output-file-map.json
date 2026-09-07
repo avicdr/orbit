@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/primary.swiftdeps"
+  },
+  "/Users/anoushka/Documents/orbit/Tests/OrbitSharedTests/DomainTypesTests.swift": {
+    "dependencies": "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.d",
+    "object": "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.swift.o",
+    "swiftmodule": "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.swiftdeps",
+    "diagnostics": "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.dia"
+  }
+}

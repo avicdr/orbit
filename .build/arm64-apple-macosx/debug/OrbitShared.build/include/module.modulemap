@@ -1,0 +1,3 @@
+module OrbitShared {
+    header "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/include/OrbitShared-Swift.h"
+}

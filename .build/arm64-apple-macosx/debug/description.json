@@ -1,0 +1,1001 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.xctest/Contents/MacOS/OrbitPackageTests",
+      "packagePath" : "/Users/anoushka/Documents/orbit",
+      "productName" : "OrbitPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.OrbitPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/sources",
+      "importPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitSharedTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "OrbitPackageTests",
+      "moduleOutputPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/include/OrbitPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "orbit"
+      ],
+      "outputFileMapPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.OrbitShared-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/sources",
+      "importPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/DesignSystem/OrbitTheme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/ContextEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/EnergyMatcher.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimeEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimelineEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/CalendarAvailability.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DailyState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DomainTypes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/FocusSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Goal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Orbit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/OrbitTask.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Project.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskContext.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskSchedule.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/DevelopmentData.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitMigrationPlan.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitModelContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Recommendation/RecommendationEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/Clock.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/ContextPreferenceStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "OrbitShared",
+      "moduleOutputPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitShared.swiftmodule",
+      "objects" : [
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitTheme.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/ContextEngine.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/EnergyMatcher.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TimeEngine.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TimelineEngine.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/CalendarAvailability.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DailyState.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DomainTypes.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/FocusSession.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Goal.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Orbit.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitTask.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Project.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TaskContext.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TaskSchedule.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DevelopmentData.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitMigrationPlan.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitModelContainer.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitRepository.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/RecommendationEngine.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Clock.swift.o",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/ContextPreferenceStore.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/include/OrbitShared-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "orbit"
+      ],
+      "outputFileMapPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitTheme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/ContextEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/EnergyMatcher.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TimeEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TimelineEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/CalendarAvailability.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DailyState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DomainTypes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/FocusSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Goal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Orbit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitTask.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Project.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TaskContext.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TaskSchedule.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DevelopmentData.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitMigrationPlan.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitModelContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/RecommendationEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Clock.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/ContextPreferenceStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitShared.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/DesignSystem/OrbitTheme.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/ContextEngine.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/EnergyMatcher.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimeEngine.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimelineEngine.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/CalendarAvailability.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DailyState.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DomainTypes.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/FocusSession.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Goal.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Orbit.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/OrbitTask.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Project.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskContext.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskSchedule.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/DevelopmentData.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitMigrationPlan.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitModelContainer.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitRepository.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Recommendation/RecommendationEngine.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/Clock.swift",
+        "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/ContextPreferenceStore.swift"
+      ],
+      "tempsPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.OrbitSharedTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/sources",
+      "importPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Tests/OrbitSharedTests/DomainTypesTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitShared.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "OrbitSharedTests",
+      "moduleOutputPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitSharedTests.swiftmodule",
+      "objects" : [
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "orbit"
+      ],
+      "outputFileMapPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules/OrbitSharedTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/anoushka/Documents/orbit/Tests/OrbitSharedTests/DomainTypesTests.swift"
+      ],
+      "tempsPath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "OrbitPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "OrbitPackageTests",
+      "-package-name",
+      "orbit",
+      "-c",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/include/OrbitPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "orbit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "OrbitShared" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "OrbitShared",
+      "-package-name",
+      "orbit",
+      "-c",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/DesignSystem/OrbitTheme.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/ContextEngine.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/EnergyMatcher.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimeEngine.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimelineEngine.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/CalendarAvailability.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DailyState.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DomainTypes.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/FocusSession.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Goal.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Orbit.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/OrbitTask.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Project.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskContext.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskSchedule.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/DevelopmentData.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitMigrationPlan.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitModelContainer.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitRepository.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Recommendation/RecommendationEngine.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/Clock.swift",
+      "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/ContextPreferenceStore.swift",
+      "-I",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/include/OrbitShared-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "orbit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "OrbitSharedTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "OrbitSharedTests",
+      "-package-name",
+      "orbit",
+      "-c",
+      "/Users/anoushka/Documents/orbit/Tests/OrbitSharedTests/DomainTypesTests.swift",
+      "-I",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "orbit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "OrbitPackageTests" : [
+      "OrbitSharedTests",
+      "OrbitShared"
+    ],
+    "OrbitShared" : [
+
+    ],
+    "OrbitSharedTests" : [
+      "OrbitShared"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/sources"
+    },
+    "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/CalendarAvailability.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Clock.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/ContextEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/ContextPreferenceStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DailyState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DevelopmentData.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/DomainTypes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/EnergyMatcher.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/FocusSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Goal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Orbit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitMigrationPlan.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitModelContainer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitTask.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/OrbitTheme.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/Project.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/RecommendationEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TaskContext.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TaskSchedule.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TimeEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/TimelineEngine.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/DomainTypesTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/DesignSystem/OrbitTheme.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/ContextEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/EnergyMatcher.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimeEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Domain/TimelineEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/CalendarAvailability.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DailyState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/DomainTypes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/FocusSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Goal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Orbit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/OrbitTask.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/Project.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskContext.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Models/TaskSchedule.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/DevelopmentData.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitMigrationPlan.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitModelContainer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Persistence/OrbitRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Recommendation/RecommendationEngine.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/Clock.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Orbit/Shared/Services/ContextPreferenceStore.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitShared.build/sources"
+    },
+    "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/anoushka/Documents/orbit/Tests/OrbitSharedTests/DomainTypesTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/OrbitSharedTests.build/sources"
+    },
+    "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/anoushka/Documents/orbit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
